@@ -6,6 +6,9 @@
     <title>Cadastro - ViajaFácil</title>
 </head>
 <body>
+    <button><a href="index.html">Início</a></button>
+    <button><a href="login.html">Login</a></button>
+    <button><a href="contato.html">Contato</a></button>
     <h2>Cadastro</h2>
     <h3>Dados pessoais</h3>
     <form action="https://localhost:8001/cadastro.php" method="get">
@@ -33,7 +36,7 @@
         <input type="text" id="campo-cidade" name="cidade">
         <br>
         <label for="estado">Estado:</label>
-        <select name="estado" id="estado">
+        <select name="estado" id="estado" required>
             <option value="">Selecione um estado</option>
             <option value="acre">AC - Acre</option>
             <option value="alagoas">AL - Alagoas</option>
