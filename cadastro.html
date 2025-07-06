@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - ViajaFácil</title>
+</head>
+<body>
+    <h2>Cadastro</h2>
+    <h3>Dados pessoais</h3>
+    <form action="https://localhost:8001/cadastro">
+        <label for="campo-nome">Nome Completo</label>
+        <input type="text" required id="campo-nome" name="nome" minlength="3" maxlength="40">
+        <br>
+        <label for="campo-cpf">CPF</label>
+        <input type="text" required minlength="14" maxlength="14" id="campo-cpf" name="cpf">
+        <br>
+        <label for="campo-data-nascimento">Data de Nascimento</label>
+        <input type="date" required id="campo-data-nascimento" name="data-nascimento">
+        <br>
+        <label>Endereço:</label>
+        <br>
+        <label for="campo-endereco-rua">Rua</label>
+        <input type="text" required id="campo-endereco-rua" name="endereco-rua">
+        <br>
+        <label for="campo-endereco-numero">Número</label>
+        <input type="number" required min="1" id="campo-endereco-numero" name="endereco-numero">
+        <br>
+        <label for="campo-cep">CEP:</label>
+        <input type="text" id="campo-cep" required name="CEP" min="9" max="9">
+        <br>
+        <label for="campo-cidade">Cidade</label>
+        <input type="text" id="campo-cidade" name="cidade">
+        <br>
+        <label for="estado">Estado:</label>
+        <select name="estado" id="estado">
+            <option value="">Selecione um estado</option>
+            <option value="acre">AC - Acre</option>
+            <option value="alagoas">AL - Alagoas</option>
+            <option value="amapa">AP - Amapá</option>
+            <option value="amazonas">AM - Amazonas</option>
+            <option value="bahia">BA - Bahia</option>
+            <option value="ceara">CE - Ceará</option>
+            <option value="distrito-federal">DF - Distrito Federal</option>
+            <option value="espirito-santo">ES - Espírito Santo</option>
+            <option value="goias">GO - Goiás</option>
+            <option value="maranhao">MA - Maranhão</option>
+            <option value="mato-grosso">MT - Mato Grosso</option>
+            <option value="mato-grosso-do-sul">MS - Mato Grosso do Sul</option>
+            <option value="minas-gerais">MG - Minas Gerais</option>
+            <option value="para">PA - Pará</option>
+            <option value="paraiba">PB - Paraíba</option>
+            <option value="parana">PR - Paraná</option>
+            <option value="pernambuco">PE - Pernambuco</option>
+            <option value="piaui">PI - Piauí</option>
+            <option value="rio-de-janeiro">RJ - Rio de Janeiro</option>
+            <option value="rio-grande-do-norte">RN - Rio Grande do Norte</option>
+            <option value="rio-grande-do-sul">RS - Rio Grande do Sul</option>
+            <option value="rondonia">RO - Rondônia</option>
+            <option value="roraima">RR - Roraima</option>
+            <option value="santa-catarina">SC - Santa Catarina</option>
+            <option value="sao-paulo">SP - São Paulo</option>
+            <option value="sergipe">SE - Sergipe</option>
+            <option value="tocantins">TO - Tocantins</option>
+        </select>
+        <br>
+        <label>Tipo Moradia:</label>
+        <br>
+        <input type="radio" id="campo-tipo-casa" name="tipo-moradia" value="Casa">
+        <label for="campo-tipo-casa">Casa</label>
+        <input type="radio" id="campo-tipo-apartamento" name="tipo-moradia" value="Apartamento">
+        <label for="campo-tipo-apartamento">Apartamento</label>
+        <br>
+
+        <h3>Criar Login</h3>
+        <label for="campo-email">E-mail</label>
+        <input type="email" id="campo-email" name="email">
+        <br>
+        <label for="campo-senha">Senha</label>
+        <input type="password" id="campo-senha" name="senha">
+        <br>
+        <label for="campo-confirme-senha">Confirme sua senha</label>
+        <input type="password" id="campo-confirme-senha" name="confirmacao-senha">
+        <br>
+        <button type="submit">Cadastrar</button> 
+    </form> 
+</body>
+</html>
