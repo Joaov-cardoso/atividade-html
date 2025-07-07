@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="stylesheet" href="styles/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - ViajaFácil</title>
 </head>
 <body>
-    <button><a href="index.html">Início</a></button>
-    <button><a href="cadastro.html">Cadastre-se</a></button>
-    <button><a href="contato.html">Contato</a></button>
-    <h1>Faça o Login:</h1>
+    <div class="botao-navegacao-direcao">
+    <a class="botao-navegacao" href="index.html">Início</a>
+    <a class="botao-navegacao" href="cadastro.html">Cadastre-se</a>
+    <a class="botao-navegacao" href="contato.html">Contato</a>
+    </div>
+    <h1 class="titulo">Faça o Login:</h1>
+    <main class="corpo-forms-direcao">
+    <div class="corpo-forms">
     <form action="https://localhost:8001/login.php" method="get">
         <label for="campo-usuario-email">Usuário</label>
         <input type="email" required id="campo-usuario-email" name="usuario">
@@ -19,5 +24,7 @@
         <br>
         <button type="submit">Entrar</button>
     </form>
+    </div>
+    </main>
 </body>
 </html>

@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+body{
+    background-color: #031240;
+    box-sizing: border-box;
+    color: #f6f6f6;
+    font-family: "Open Sans", sans-serif;
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+}
+.inicio-paragrafo{
+    display: flex;
+    justify-content: center;
+}
+.botoes-inicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+    
+}
+.inicio-botoes{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    border: 1px solid #f6f6f6;
+    border-radius: 8px;
+    width: 50%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21,5px 0;
+    text-decoration: none;
+    color: #f6f6f6;
+}
+.inicio-botoes:hover{
+    background-color: #5e82f7;
+}
+.botao-navegacao-direcao{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.botao-navegacao{
+    display: flex;
+    justify-content: center;
+    border: 1px solid #f6f6f6;
+    border-radius: 8px;
+    width: 10%;
+    text-align: center;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 1px 0;
+    color: #f6f6f6;
+    text-decoration: none;
+}
+.botao-navegacao:hover{
+    background-color: #5e82f7;
+}
+.corpo-forms{
+    display: flex;
+    justify-content: center;
+    border: 1px solid #f6f6f6;
+    border-radius: 8px;
+    width: 25%;
+    padding: 10px 0;
+}
+.corpo-forms-direcao{
+    display: flex;
+    justify-content: center;
+}
+.tabela{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.links-contato{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.imagem-cartao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
